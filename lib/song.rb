@@ -26,14 +26,14 @@ class Song
     song  
   end
   
-  def self.alphabetical()
-    @@all.sort_by
-  end
-  
   def self.create_by_name(name)
     song = Song.new(name)
     @@all << song
     song  
+  end  
+  
+  def self.alphabetical()
+    @@all.sort_by
   end
   
   def self.find_by_name(name)
